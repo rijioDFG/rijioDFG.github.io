@@ -262,6 +262,32 @@ new WOW().init();
         
       </div> 
 </div>
+
+<!-- 评论系统 -->
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://rijioDFG.github.io/gitment/style/default.css">
+<script src="https://rijioDFG.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '页面 ID', // 可选。默认为 location.href
+  owner: '你的 GitHub ID',
+  repo: '存储评论的 repo',
+  oauth: {
+    client_id: '你的 client ID',
+    client_secret: '你的 client secret',
+  },
+})
+gitment.render('container')
+</script>
+
+
+
+
+
+
+
+
 <div id="overlay" style="opacity: 1; cursor: pointer;"></div>
   <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
     for (var i = 0,
